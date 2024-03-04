@@ -4,6 +4,8 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .title-section-white {
@@ -18,29 +20,60 @@ html, body{
 	text-underline-offset: 10px; 
 }
 
+.title-section{
+	font-family: "Cormorant Garamond", serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
 .stylized-background{
 	background: #F5F3ED;
+	z-index: -1;
+	height: 100%;
+	min-height: 1000px;
+	top: 135px;
+	position: relative;
 }
 
 .stylized-background-brown{
 	background: #80451F;	
+	position: relative;
 	height: 100%;
-	margin-top: -100px;
-	align-content: flex-end;
-	align-items: flex-end;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	flex-direction: row;
+	bottom: 135px;
+	z-index: -1;
 }
 
 .images-carrousel{
+	width: 100%;
   	padding: 10px;
 	overflow-y: scroll;
-	padding: 36px;
+	margin-left: 120px;
 }
 
 .images-carrousel::-webkit-scrollbar{
 	display: none;
+}
+
+.image-decoration{
+}
+
+.image-coffe-section{
+	width: 100%;
+}
+
+.parent-section{
+	margin-top: 128px; 
+	margin-left: 120px;
+	display: inline-flex;
+	flex-wrap: nowrap;
+}
+
+.title-section-decoration{
+	height: 28px;
+	width: 438px;
+	background-color: #FBC9A8;
+	position: absolute;
+	z-index: -1;
 }
 
 
