@@ -1,83 +1,182 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-html, body{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.title-section-white {
-  	font-family: "Cormorant Garamond", serif;
-  	font-weight: 400;
-  	font-style: normal;
-  	text-align: center;
-	color: #F0F0F0;
-	padding-top: 100px;
-	text-decoration-line: underline;
-	text-decoration-color: #B2784A;
-	text-underline-offset: 10px; 
+body{
+    position: relative;
 }
 
-.title-section{
-	font-family: "Cormorant Garamond", serif;
-  	font-weight: 400;
-  	font-style: normal;
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #57290B;
+    font-family: "Cormorant Garamond";
+    color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.8px;
+    position: fixed;
+    z-index: 1;
+    
 }
 
-.stylized-background{
-	background: #F5F3ED;
-	z-index: -1;
-	height: 100%;
-	min-height: 1000px;
-	top: 135px;
-	position: relative;
+nav{
+    margin-left: 119px;
+    margin-right: 119px;
+    
 }
 
-.stylized-background-brown{
-	background: #80451F;	
-	position: relative;
-	height: 100%;
-	bottom: 135px;
-	z-index: -1;
+.Cabeçalho{
+    
 }
 
-.images-carrousel{
-	width: 100%;
-  	padding: 10px;
-	overflow-y: scroll;
-	margin-left: 120px;
+.Cabeçalho-Parte{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 7px;
 }
 
-.images-carrousel::-webkit-scrollbar{
-	display: none;
+.Cabeçalho-item{
+    color: inherit;
+    text-decoration: none;
 }
 
-.image-decoration{
+#Cabeçalho-contato{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.image-coffe-section{
-	width: 100%;
+.Logo{
+    width: 13%;
+    
 }
 
-.parent-section{
-	margin-top: 128px; 
-	margin-left: 120px;
-	display: inline-flex;
-	flex-wrap: nowrap;
+.Linhas-Estilo{
+    margin-left: 10px;
+    width: 43px;
+    height: 2px;
+    background-color: #B2784A;
+    border-radius: 1px;
+    align-items: center;
+}
+  
+.Intro{
+    padding-top: 100px;
+    width: 100%;
+    height: 525px;
+    position: relative;
 }
 
-.title-section-decoration{
-	height: 28px;
-	width: 438px;
-	background-color: #FBC9A8;
-	position: absolute;
-	z-index: -1;
+.Espaço{
+   
+}
+#Intro-imagem{
+    position: absolute;
+    z-index: -1;
+    
 }
 
+.Intro-texto{
+    margin-left: 120px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 76.26px;
+    color: #F0F0F0;
+    position: flex;
+    flex-direction: column;
+}
+.Intro-texto1{
+    padding-top: 64px;
+    width: 550px;
+    font-size: 56px;
+}
 
+.Intro-texto2{
+    padding-top: 16px;
+    width: 500px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    padding-bottom: 41px;
+}
 
+.Botao-Cafeteria{
+    width: 283px;
+    height: 57px;
+    font-weight: 800;
+    background-color: #8F542E;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 
+}
 
+.Sobre-nos{
+    padding-top: 57px;
+    margin-left: 106px;
+    margin-right: 176px;
+    height: 397px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.SN-textos{
+    color:#1F0C00; 
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SN-titulo{
+    padding-bottom: 40px;
+}
+.SN-texto1{
+    width: 500px;
+    height: 96px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.SN-texto2{
+    padding-top: 16px;
+    padding-bottom: 48px;
+    width: 500px;
+    height: 96px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+#SN-imagem{
+    width: 50%;
+    height: 50%;
+}
+
+.SN-botao{
+    width: 283px;
+    height: 57px;
+    font-weight: 800;
+    color: #F0F0F0;
+    line-height: 33px;
+    font-family: "Open Sans";
+    background-color: #8F542E;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    letter-spacing: 3%;
+}
