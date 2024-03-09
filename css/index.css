@@ -16,6 +16,8 @@
 
 	--beige-detail: #fbc9a8;
 	--medium-brown-detail: #b2784a;
+
+	--shadow-contact-box: -4px 7px 29px 6px rgba(31, 12, 0, 0.2);
 }
 
 html, body{
@@ -28,6 +30,9 @@ html, body{
 
 *{
 	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 form{
@@ -36,6 +41,8 @@ form{
 	gap: 32px;
 	padding: 24px;
 	background-color: var(--white-bg-form);
+	box-shadow: var(--shadow-contact-box);
+	border-radius: 20px;
 }
 
 .fields-group{
@@ -43,21 +50,6 @@ form{
 	flex-direction: column;
 	gap: 16px;
 	width: 100%;
-}
-
-.title-section-white {
-  	font-family: "Cormorant Garamond", serif;
-  	font-weight: 400;
-  	font-style: normal;
-  	text-align: center;
-	color: var(--white-font);
-	padding-top: 100px;
-}
-
-.title-section{
-	font-family: "Cormorant Garamond", serif;
-  	font-weight: 400;
-  	font-style: normal;
 }
 
 .stylized-background{
@@ -109,6 +101,9 @@ form{
 .contact-section{
 	width: 100dvw;
 	padding: 64px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
 }
 
 .section-title{
@@ -132,6 +127,27 @@ form{
 	left: 0;
 	bottom: 0;
 	z-index: -1;
+}
+
+.section-title.section-title.underline-style{
+	font-family: "Cormorant Garamond", serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	text-align: center;
+	color: var(--white-font);
+	padding-top: 100px;
+	text-align: center;
+}
+
+.section-title.underline-style::after{
+	background-color: var(--light-brown-nav);
+	height: 2px;
+}
+
+.form-section{
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 48px;
 }
 
 .form-field>input, .form-field>textarea{
@@ -175,11 +191,60 @@ form{
 
 }
 
-@media (main-width: 1024px){
+.mobile-social-media{
+	width: 100%;
+	display: flex;
+	list-style: none;
+	align-items: center;
+	gap: 16px;
+	justify-content: center;
+	margin: 0;
+}
+
+.mobile-social-media>li{
+	aspect-ratio: 1/1;
+	height: 70px;
+	display: grid;
+	place-items: center;
+}
+
+.contact-link{
+
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	
+}
+
+.contact-link>svg{
+	width: 50px;
+	height: 50px;
+}
+
+.contact-information{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	gap: 16px;
+}
+
+.contact-information>h2{
+	line-height: 42px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+@media screen and (main-width: 1024px){
 	form{
 		padding: 40px;
+		box-shadow: none;
+		border-radius: 0;
 	}
 }
+
+
 
 
 
