@@ -118,7 +118,7 @@ form{
 	z-index: -1;
 }
 
-.section-title.section-title.underline-style{
+.section-title.underline-style{
 	font-family: "Cormorant Garamond", serif;
   	font-weight: 400;
   	font-style: normal;
@@ -126,11 +126,13 @@ form{
 	color: var(--white-font);
 	padding-top: 100px;
 	text-align: center;
+	height: fit-content;
 }
 
 .section-title.underline-style::after{
 	background-color: var(--light-brown-nav);
 	height: 2px;
+	bottom: 0;
 }
 
 .form-section{
@@ -358,6 +360,9 @@ form{
 	}
 	.section-divider>img{
 		height: 100%;
+	}
+	.section-title.underline-style{
+		
 	}
 }
 
