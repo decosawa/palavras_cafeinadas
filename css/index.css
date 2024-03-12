@@ -28,6 +28,10 @@ html, body{
 	flex-direction: column;
 }
 
+body{
+	position: relative;
+}
+
 *{
 	font-family: "Open Sans", sans-serif;
 	margin: 0;
@@ -43,6 +47,26 @@ form{
 	background-color: var(--white-bg-form);
 	box-shadow: var(--shadow-contact-box);
 	border-radius: 20px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #57290B;
+    font-family: "Cormorant Garamond";
+    color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.8px;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+nav{
+    margin-left: 119px;
+    margin-right: 119px;
+    
 }
 
 .fields-group{
@@ -61,10 +85,21 @@ form{
 }
 
 .images-carrousel{
-	width: 100%;
-  	padding: 10px;
+	width: 100dvw;
+  	padding: 10dvh 3dvw;
 	overflow-y: scroll;
-	margin-left: 120px;
+	display: flex;
+	flex-basis: content;
+	justify-items: flex-start;
+	justify-content: space-between;
+}
+
+.image-decoration{
+	background-color: var(--white-font);
+	border-radius: 8px;
+	height: fit-content+15dvh;
+	width: fit-content+25dvw;
+
 }
 
 .images-carrousel::-webkit-scrollbar{
@@ -124,15 +159,27 @@ form{
   	font-style: normal;
   	text-align: center;
 	color: var(--white-font);
-	padding-top: 100px;
-	text-align: center;
-	height: fit-content;
+	padding-top: 20dvh;
+	bottom: 10dvh;
 }
 
 .section-title.underline-style::after{
 	background-color: var(--light-brown-nav);
 	height: 2px;
 	bottom: 0;
+	content: "";
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.section-cafeteria{
+	width: 100dvw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 10dvh;
 }
 
 .form-section{
@@ -199,6 +246,7 @@ form{
 	place-items: center;
 }
 
+
 .contact-link{
 	height: 100%;
 	width: 100%;
@@ -248,7 +296,169 @@ form{
 
 .home-section{
 	width: 100dvw;
-	height: 100dvh;
+	height: 150dvh;
+}
+
+.Cabeçalho-Parte{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 7px;
+}
+
+.Cabeçalho-item{
+    color: inherit;
+    text-decoration: none;
+}
+
+#Cabeçalho-contato{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo{
+    width: 13%;
+    
+}
+
+.Linhas-Estilo{
+    margin-left: 10px;
+    width: 43px;
+    height: 2px;
+    background-color: #B2784A;
+    border-radius: 1px;
+    align-items: center;
+}
+  
+.Intro{
+    padding-top: 100px;
+    width: 100%;
+    height: 525px;
+    position: relative;
+}
+
+#Intro-imagem{
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.Intro-texto{
+    margin-left: 120px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 76.26px;
+    color: #F0F0F0;
+    position: flex;
+    flex-direction: column;
+}
+.Intro-texto1{
+    padding-top: 64px;
+    width: 550px;
+    font-size: 56px;
+}
+
+.Intro-texto2{
+    padding-top: 16px;
+    width: 500px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    padding-bottom: 41px;
+}
+
+.Botao-Cafeteria{
+    width: 283px;
+    height: 57px;
+    font-weight: 800;
+    background-color: #8F542E;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.Sobre-nos{
+    padding-top: 30dvh;
+    margin-left: 106px;
+    margin-right: 176px;
+    height: 397px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SN-textos{
+    margin-left: 16px;
+    color:#1F0C00; 
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SN-titulo{
+    padding-bottom: 40px;
+}
+.SN-texto1{
+    width: 500px;
+    height: 96px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.SN-texto2{
+    padding-top: 16px;
+    padding-bottom: 48px;
+    width: 500px;
+    height: 96px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.SN-imagem{
+    width: 30dvh;
+	height: 30dvh;
+}
+
+.SN-detalhe{
+    position: absolute;
+    width: 255px;
+    height: 28px;
+    background-color: #FBC9A8;
+    z-index: -1;
+    left: 104px;
+    margin-top: 27px;
+}
+.SN-botao{
+    width: 283px;
+    height: 57px;
+    font-weight: 800;
+    color: #F0F0F0;
+    line-height: 33px;
+    font-family: "Open Sans";
+    background-color: #8F542E;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 10px;
+    letter-spacing: 3%;
+    color: Branco-Font;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1024px){
