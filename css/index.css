@@ -26,6 +26,7 @@ html, body{
 	scale: 62,5%;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 
 body{
@@ -59,7 +60,7 @@ header{
     font-weight: 700;
     line-height: 21.8px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     
 }
 
@@ -92,18 +93,21 @@ nav{
 	flex-basis: content;
 	justify-items: flex-start;
 	justify-content: space-between;
+	flex-direction: row;
 }
 
 .image-decoration{
 	background-color: var(--white-font);
-	border-radius: 8px;
-	height: fit-content+15dvh;
-	width: fit-content+25dvw;
-
+	
 }
 
 .images-carrousel::-webkit-scrollbar{
 	display: none;
+}
+
+.device-image{
+	width: 30dvh;
+	height: 15dvw;
 }
 
 .image-coffe-section{
@@ -290,13 +294,13 @@ nav{
 }
 
 .section-divider>img{
-	width: auto;
+	width: 100dvw;
 	height: 100%;
 }
 
 .home-section{
 	width: 100dvw;
-	height: 150dvh;
+	height: 200dvh;
 }
 
 .Cabeçalho-Parte{
@@ -321,13 +325,8 @@ nav{
     gap: 10px;
 }
 
-.Logo{
-    width: 13%;
-    
-}
-
 .Linhas-Estilo{
-    margin-left: 10px;
+    margin-left: 2dvh;
     width: 43px;
     height: 2px;
     background-color: #B2784A;
@@ -337,7 +336,7 @@ nav{
   
 .Intro{
     padding-top: 100px;
-    width: 100%;
+    width: 100dvw;
     height: 525px;
     position: relative;
 }
@@ -345,7 +344,7 @@ nav{
 #Intro-imagem{
     position: absolute;
     z-index: -1;
-    
+    width: 100dvw;
 }
 
 .Intro-texto{
@@ -388,10 +387,10 @@ nav{
 }
 
 .Sobre-nos{
-    padding-top: 30dvh;
+    padding-top: 50dvh;
     margin-left: 106px;
     margin-right: 176px;
-    height: 397px;
+    height: 200dvh;
     display: flex;
     justify-content: space-between;
 }
@@ -570,6 +569,7 @@ nav{
 	}
 	.section-divider>img{
 		height: 100%;
+		width: 100dvw;
 	}
 	.section-title.underline-style{
 		
