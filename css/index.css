@@ -86,19 +86,43 @@ nav{
 }
 
 .images-carrousel{
-	width: 100dvw;
+	
   	padding: 10dvh 3dvw;
 	overflow-y: scroll;
 	display: flex;
+	flex-wrap: wrap;
 	flex-basis: content;
 	justify-items: flex-start;
 	justify-content: space-between;
+	gap:24px;
 	flex-direction: row;
 }
 
 .image-decoration{
+	padding: 16px;
+	width: 25dvw;
 	background-color: var(--white-font);
-	
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.carrousel-titulo{
+	padding-top: 8px;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.carrousel-texto{
+	width: 22dvw;
+	padding-top: 4px;
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 2%;
 }
 
 .images-carrousel::-webkit-scrollbar{
@@ -106,8 +130,8 @@ nav{
 }
 
 .device-image{
-	width: 30dvh;
-	height: 15dvw;
+	width: 100%;
+	
 }
 
 .image-coffe-section{
@@ -458,6 +482,32 @@ nav{
     letter-spacing: 3%;
     color: Branco-Font;
     text-decoration: none;
+}
+
+footer{
+	padding-top: 128px;
+	
+}
+
+.footer-estilos{
+	height: 13dvh;
+	background-color: #57290B;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-texto{
+	margin-left: 120px;
+	margin-right: 120px;
+	color: #FFDAB8;
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 1%;
+	display: flex;
+	align-items: center;
+
 }
 
 @media screen and (min-width: 1024px){
