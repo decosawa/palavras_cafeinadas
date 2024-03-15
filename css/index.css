@@ -52,7 +52,7 @@ form{
 
 header{
     width: 100%;
-    height: 100px;
+    height: 64px;
     background-color: #57290B;
     font-family: "Cormorant Garamond";
     color: #F0F0F0;
@@ -324,29 +324,15 @@ nav{
 
 .home-section{
 	width: 100dvw;
-	height: 200dvh;
-}
-
-.Cabeçalho-Parte{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding-top: 7px;
+	height: 170dvh;
 }
 
 .Cabeçalho-item{
-    color: inherit;
-    text-decoration: none;
+    display: none;
 }
 
 #Cabeçalho-contato{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: none;
 }
 
 .Linhas-Estilo{
@@ -359,42 +345,68 @@ nav{
 }
   
 .Intro{
-    padding-top: 100px;
     width: 100dvw;
-    height: 525px;
+    height: 20dvh;
     position: relative;
 }
 
-#Intro-imagem{
-    position: absolute;
-    z-index: -1;
-    width: 100dvw;
+#Intro-imagem{ 
+    display: none;
+}
+
+.mobile-intro-image{
+	width: 100%;
+	height: 50dvh;
+	z-index: -1;
+	position: absolute;
+	display: flex;
 }
 
 .Intro-texto{
-    margin-left: 120px;
+    margin-left: 10dvw;
     font-family: "Open Sans";
     font-weight: 700;
     line-height: 76.26px;
     color: #F0F0F0;
     position: flex;
     flex-direction: column;
+	padding: 15dvh 0px 5dvh;
 }
 .Intro-texto1{
-    padding-top: 64px;
-    width: 550px;
-    font-size: 56px;
+    width: 70dvw;
+    font-size: 28px;
+	font-weight: 700;
+	line-height: 32px;
+	padding-bottom: 5dvh;
 }
-
 .Intro-texto2{
-    padding-top: 16px;
-    width: 500px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 33px;
-    padding-bottom: 41px;
+    display: none;
 }
-
+.Logo{
+	display: none;
+}
+.mobile-logo-span{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	width: 100dvw;
+	height: 100%;
+}
+.mobile-logo-text{
+	line-height: 22px;
+	font-size: 18px;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 400;
+	
+}
+.mobile-logo{
+	width: 25px;
+	height: 32px;
+	margin-right: 200px;
+	position: absolute;
+}
 .Botao-Cafeteria{
     width: 283px;
     height: 57px;
@@ -408,17 +420,16 @@ nav{
     border-radius: 8px;
     color: #F0F0F0;
     text-decoration: none;
-}
 
+}
 .Sobre-nos{
-    padding-top: 50dvh;
-    margin-left: 106px;
-    margin-right: 176px;
-    height: 200dvh;
+    padding-top: 36dvh;
+    height: dvh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+	margin-left: 25px;
+	margin-right: 25px;
 }
-
 .SN-textos{
     margin-left: 16px;
     color:#1F0C00; 
@@ -429,48 +440,47 @@ nav{
     display: flex;
     flex-direction: column;
 }
-
 .SN-titulo{
-    padding-bottom: 40px;
+    padding-bottom: 4dvh;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 24px;
+	line-height: 42px;
+	margin-left: 3.2dvw;
 }
 .SN-texto1{
-    width: 500px;
-    height: 96px;
+	width: auto;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 27px;
     font-weight: 500;
 }
 
 .SN-texto2{
-    padding-top: 16px;
-    padding-bottom: 48px;
-    width: 500px;
-    height: 96px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 27px;
     font-weight: 500;
+	padding: 5dvh 0px 10dvh 0px;
 }
 
 .SN-imagem{
-    width: 30dvh;
-	height: 30dvh;
+    display: none;
 }
 
 .SN-detalhe{
     position: absolute;
-    width: 255px;
-    height: 28px;
+    width: 159px;
+    height: 21px;
     background-color: #FBC9A8;
     z-index: -1;
-    left: 104px;
-    margin-top: 27px;
+    left: 2dvh;
+    margin-top: 20px;
+	margin-left: 25px;
 }
 .SN-botao{
     width: 283px;
-    height: 57px;
+    height: 5dvh;
     font-weight: 800;
     color: #F0F0F0;
-    line-height: 33px;
+    line-height: 20px;
     font-family: "Open Sans";
     background-color: #8F542E;
     font-size: 18px;
@@ -479,9 +489,8 @@ nav{
     justify-content: center;
     border-radius: 8px;
     gap: 10px;
-    letter-spacing: 3%;
-    color: Branco-Font;
     text-decoration: none;
+	margin-left: 4dvw;
 }
 
 footer{
@@ -517,6 +526,152 @@ footer{
 		border-radius: 0;
 		flex-grow: 1;
 		width: 20%;
+	}
+	header{
+		height: 100px;
+	}
+
+	.Intro{
+		padding-top: 100px;
+		width: 100dvw;
+		height: 60dvh;
+		position: relative;
+	}
+	.Sobre-nos{
+		padding-top: 50dvh;
+		margin-left: 106px;
+		margin-right: 176px;
+		height: 200dvh;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 36dvh;
+		margin-left: 106px;
+		margin-right: 176px;
+	}
+	.SN-textos{
+		color:#1F0C00; 
+		font-family: "Cormorant Garamond";
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 56px;
+		display: flex;
+		flex-direction: column;
+	}
+	.SN-titulo{
+		padding-bottom: 40px;
+		font-family: "Cormorant Garamond", serif;
+		font-size: 40px;
+		line-height: 56px;
+		margin-left: 1.5dvw;
+	}
+	.SN-detalhe{
+		position: absolute;
+		width: 255px;
+		height: 28px;
+		background-color: #FBC9A8;
+		z-index: -1;
+		left: 104px;
+		margin-top: 27px;
+	}
+	.SN-texto1{
+		width: 500px;
+		height: 96px;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 500;
+		margin-left: 16px;
+	}
+	.SN-texto2{
+		padding-top: 16px;
+		padding-bottom: 100px;
+		width: 500px;
+		height: 96px;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 500;
+		margin-left: 16px;
+	}
+	.SN-botao{
+		width: 283px;
+		height: 80px;
+		font-weight: 800;
+		color: #F0F0F0;
+		line-height: 20px;
+		font-family: "Open Sans";
+		background-color: #8F542E;
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+		gap: 10px;
+		margin-left: 16px;
+	}
+	.Logo{
+		display: flex;
+	}
+	.mobile-logo-span{
+		display: none;
+	}
+	.Cabeçalho-Parte{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		padding-top: 7px;
+	}
+	
+	.Cabeçalho-item{
+		color: inherit;
+		text-decoration: none;
+		display: block;
+	}
+	
+	#Cabeçalho-contato{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.Intro-texto{
+		margin-left: 120px;
+		font-family: "Open Sans";
+		font-weight: 700;
+		line-height: 76.26px;
+		color: #F0F0F0;
+		position: flex;
+		flex-direction: column;
+	}
+	.SN-imagem{
+		width: 40dvh;
+		height: 40dvh;
+		display: flex;
+	}
+	#Intro-imagem{
+		width: 100dvw;
+		height: 80dvh;
+		position: absolute;
+    	z-index: -1;
+		display: flex;
+	}
+	.mobile-intro-image{
+		display: none;
+	}
+	.Intro-texto1{
+		width: 30dvw;
+		font-size: 56px;
+		line-height: 76.26px;
+	}
+	.Intro-texto2{
+		padding-top: 16px;
+		width: 500px;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 33px;
+		padding-bottom: 41px;
+		display: flex;
 	}
 	.form-section{
 		flex-direction: row;
@@ -621,8 +776,8 @@ footer{
 		height: 100%;
 		width: 100dvw;
 	}
-	.section-title.underline-style{
-		
+	.home-section{
+		height: 180dvh;
 	}
 }
 
