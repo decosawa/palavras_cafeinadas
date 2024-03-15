@@ -86,25 +86,24 @@ nav{
 }
 
 .images-carrousel{
-padding: 10dvh 3dvw;
-  overflow-y: scroll;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: content;
-  justify-items: flex-start;
-  justify-content: space-between;
-  gap:24px;
-  flex-direction: row;
-
+	padding: 10dvh 3dvw;
+	overflow-y: scroll;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-basis: content;
+	justify-items: flex-start;
+	justify-content: space-between;
+	gap:24px;
+	flex-direction: row;
 }
 
 .image-decoration{
-  padding: 16px;
-  width: 25dvw;
-  background-color: var(--white-font);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
+	padding: 16px;
+	width: 25dvw;
+	background-color: var(--white-font);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
 
 }
 
@@ -414,8 +413,7 @@ padding: 10dvh 3dvw;
 
 }
 .Sobre-nos{
-    padding-top: 36dvh;
-    height: dvh;
+    padding-top: 40dvh;
     display: flex;
     justify-content: center;
 	margin-left: 25px;
@@ -509,7 +507,43 @@ footer{
 
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+	.Intro-texto1{
+		width: 45dvw;
+		font-size: 40px;
+		line-height: 60px;
+	}
+	.Intro-texto2{
+		display: none;
+	}
+	#Intro-imagem{
+		display: none;
+	}
+	.mobile-intro-image{
+		height: 60dvh;
+	}
+	.Sobre-nos{
+		padding-top: 40dvh;
+	}
+	.SN-titulo{
+		margin-left: 1.5dvw;
+	}
+	.SN-botao{
+		margin-left: 30dvw;
+	}
+	.SN-textos{
+		margin-left: 2dvw;
+		color:#1F0C00; 
+		font-family: "Cormorant Garamond";
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 56px;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 1366px){
 	form{
 		padding: 40px;
 		box-shadow: none;
@@ -528,13 +562,12 @@ footer{
 		position: relative;
 	}
 	.Sobre-nos{
-		padding-top: 50dvh;
 		margin-left: 106px;
 		margin-right: 176px;
 		height: 200dvh;
 		display: flex;
 		justify-content: space-between;
-		padding-top: 36dvh;
+		padding-top: 50dvh;
 		margin-left: 106px;
 		margin-right: 176px;
 	}
@@ -618,6 +651,8 @@ footer{
 		color: inherit;
 		text-decoration: none;
 		display: block;
+		font-family: "Cormorant Garamond", serif;
+		font-weight: 700;
 	}
 	
 	#Cabeçalho-contato{
@@ -641,7 +676,7 @@ footer{
 	}
 	#Intro-imagem{
 		width: 100dvw;
-		height: 80dvh;
+		height: 50dvw;
 		position: absolute;
     	z-index: -1;
 		display: flex;
@@ -650,17 +685,17 @@ footer{
 		display: none;
 	}
 	.Intro-texto1{
-		width: 30dvw;
+		width: 45dvw;
 		font-size: 56px;
 		line-height: 76.26px;
 	}
 	.Intro-texto2{
 		padding-top: 16px;
-		width: 500px;
+		width: 20dvw;
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 33px;
-		padding-bottom: 41px;
+		padding-bottom: 4dvh;
 		display: flex;
 	}
 	.form-section{
@@ -767,7 +802,7 @@ footer{
 		width: 100dvw;
 	}
 	.home-section{
-		height: 180dvh;
+		height: 200dvh;
 	}
 }
 
