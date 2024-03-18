@@ -83,19 +83,25 @@ nav{
 	height: 100%;
 	bottom: 135px;
 	padding: 12dvw 24px 120px;
+	width: 100%;
 }
 
 .images-carrousel{
-	padding: 10dvh 3dvw;
-	overflow-y: scroll;
-	display: flex;
-	flex-wrap: nowrap;
-	flex-basis: content;
-	justify-items: flex-start;
-	justify-content: space-between;
-	gap:24px;
-	flex-direction: row;
-	overflow-y: hidden;
+    padding: 10dvh 3dvw;
+    padding-left: 3dvw;
+    overflow-x:hidden;
+    display: flex;
+    width: 100vw;
+    cursor:grab;
+    flex-basis: content;
+    justify-items: flex-start;
+    justify-content: space-between;
+    gap:24px;
+    flex-direction: row;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+
 }
 
 .image-decoration{
@@ -234,6 +240,10 @@ nav{
 	font-family: "Open Sans", serif;
 	font-weight: 800;
 	color: var(--white-font);
+}
+
+.cta-button:hover{
+	background-color: #CA8E67;
 }
 
 .cta-svg{
