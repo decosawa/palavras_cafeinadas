@@ -95,6 +95,7 @@ nav{
 	justify-content: space-between;
 	gap:24px;
 	flex-direction: row;
+	overflow-y: hidden;
 }
 
 .image-decoration{
@@ -111,18 +112,12 @@ nav{
 	padding-top: 8px;
 	font-family: "Open Sans";
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 18px;
 }
 
 .carrousel-texto{
-	width: 22dvw;
-	padding-top: 4px;
-	font-family: "Open Sans";
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
-	letter-spacing: 2%;
+	display: none;
 }
 .image-coffe-section{
 	width: 100%;
@@ -554,7 +549,24 @@ footer{
 	header{
 		height: 100px;
 	}
-
+	.carrousel-titulo{
+		padding-top: 8px;
+		font-family: "Open Sans";
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 18px;
+		display: flex;
+	}
+	.carrousel-texto{
+		width: 22dvw;
+		padding-top: 4px;
+		font-family: "Open Sans";
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 2%;
+		display: flex;
+	}
 	.Intro{
 		padding-top: 100px;
 		width: 100dvw;
