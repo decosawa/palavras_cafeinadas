@@ -23,7 +23,6 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	scale: 62,5%;
 	display: flex;
 	flex-direction: column;
 	overflow-x: hidden;
@@ -111,9 +110,7 @@ nav{
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
-
 }
-
 .carrousel-titulo{
 	padding-top: 8px;
 	font-family: "Open Sans";
@@ -121,7 +118,6 @@ nav{
 	font-size: 14px;
 	line-height: 18px;
 }
-
 .carrousel-texto{
 	display: none;
 }
@@ -334,7 +330,7 @@ nav{
     margin-left: 1.2dvh;
     width: 43px;
     height: 2px;
-    background-color: #B2784A;
+    background-color: var(--medium-brown-detail);
     border-radius: 1px;
     align-items: center;
 }
@@ -362,7 +358,7 @@ nav{
     font-family: "Open Sans";
     font-weight: 700;
     line-height: 76.26px;
-    color: #F0F0F0;
+    color: var(--white-font);
     position: flex;
     flex-direction: column;
 	padding: 15dvh 0px 5dvh;
@@ -394,7 +390,6 @@ nav{
 	font-size: 18px;
 	font-family: "Cormorant Garamond", serif;
 	font-weight: 400;
-	
 }
 .mobile-logo{
 	width: 25px;
@@ -406,7 +401,7 @@ nav{
     width: 283px;
     height: 57px;
     font-weight: 800;
-    background-color: #8F542E;
+    background-color: var(--medium-brown);
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -417,6 +412,9 @@ nav{
     text-decoration: none;
 
 }
+.Botao-Cafeteria:hover{
+	background-color: #CA8E67;
+}
 .Sobre-nos{
     padding-top: 40dvh;
     display: flex;
@@ -426,7 +424,7 @@ nav{
 }
 .SN-textos{
     margin-left: 16px;
-    color:#1F0C00; 
+    color: var(--black-font); 
     font-family: "Cormorant Garamond";
     font-weight: 700;
     font-size: 40px;
@@ -434,20 +432,12 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.SN-titulo{
-    padding-bottom: 4dvh;
-	font-family: "Cormorant Garamond", serif;
-	font-size: 24px;
-	line-height: 42px;
-	margin-left: 3.2dvw;
-}
 .SN-texto1{
 	width: auto;
     font-size: 18px;
     line-height: 27px;
     font-weight: 500;
 }
-
 .SN-texto2{
     font-size: 18px;
     line-height: 27px;
@@ -459,24 +449,14 @@ nav{
     display: none;
 }
 
-.SN-detalhe{
-    position: absolute;
-    width: 159px;
-    height: 21px;
-    background-color: #FBC9A8;
-    z-index: -1;
-    left: 2dvh;
-    margin-top: 20px;
-	margin-left: 25px;
-}
 .SN-botao{
     width: 283px;
     height: 5dvh;
     font-weight: 800;
-    color: #F0F0F0;
+    color: var(--white-font);
     line-height: 20px;
     font-family: "Open Sans";
-    background-color: #8F542E;
+    background-color: var(--medium-brown);
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -486,16 +466,20 @@ nav{
     text-decoration: none;
 	margin-left: 4dvw;
 }
+.SN-botao:hover{
+	background-color: #CA8E67;
+
+}
 
 footer{
 	padding-top: 128px;
 }
 
 .footer-estilos{
-	height: 13dvh;
+	height: 15dvh;
 	background-color: #57290B;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 }
 
 .footer-texto{
@@ -508,7 +492,6 @@ footer{
 	line-height: 24px;
 	letter-spacing: 1%;
 	display: flex;
-	align-items: center;
 
 }
 
@@ -529,9 +512,6 @@ footer{
 	}
 	.Sobre-nos{
 		padding-top: 40dvh;
-	}
-	.SN-titulo{
-		margin-left: 1.5dvw;
 	}
 	.SN-botao{
 		margin-left: 30dvw;
@@ -558,6 +538,14 @@ footer{
 	}
 	header{
 		height: 100px;
+	}
+	.footer-estilos{
+		height: 13dvh;
+		background-color: #57290B;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
 	}
 	.carrousel-titulo{
 		padding-top: 8px;
@@ -602,22 +590,6 @@ footer{
 		display: flex;
 		flex-direction: column;
 	}
-	.SN-titulo{
-		padding-bottom: 40px;
-		font-family: "Cormorant Garamond", serif;
-		font-size: 40px;
-		line-height: 56px;
-		margin-left: 1.5dvw;
-	}
-	.SN-detalhe{
-		position: absolute;
-		width: 255px;
-		height: 28px;
-		background-color: #FBC9A8;
-		z-index: -1;
-		left: 104px;
-		margin-top: 27px;
-	}
 	.SN-texto1{
 		width: 500px;
 		height: 96px;
@@ -638,12 +610,12 @@ footer{
 	}
 	.SN-botao{
 		width: 283px;
-		height: 80px;
+		height: 59px;
 		font-weight: 800;
 		color: #F0F0F0;
 		line-height: 20px;
 		font-family: "Open Sans";
-		background-color: #8F542E;
+		background-color: var(--medium-brown);
 		font-size: 18px;
 		display: flex;
 		align-items: center;
@@ -676,8 +648,6 @@ footer{
 		font-family: "Cormorant Garamond", serif;
 		font-weight: 700;
 		position: relative;
-		display: flex;
-		flex-direction: column;
 	}
 	
 	#Cabeçalho-contato{
@@ -828,6 +798,10 @@ footer{
 	}
 	.home-section{
 		height: 200dvh;
+	}
+	.cta-button{
+		width: 20dvw;
+		height: 5dvh;
 	}
 }
 
