@@ -321,7 +321,7 @@ nav{
 }
 
 .Linhas-Estilo{
-    margin-left: 2dvh;
+    margin-left: 1.2dvh;
     width: 43px;
     height: 2px;
     background-color: #B2784A;
@@ -665,6 +665,9 @@ footer{
 		display: block;
 		font-family: "Cormorant Garamond", serif;
 		font-weight: 700;
+		position: relative;
+		display: flex;
+		flex-direction: column;
 	}
 	
 	#Cabeçalho-contato{
