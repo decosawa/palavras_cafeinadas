@@ -321,11 +321,6 @@ nav{
 	height: 100%;
 }
 
-.home-section{
-	width: 100dvw;
-	height: 170dvh;
-}
-
 .Cabeçalho-item{
     display: none;
 }
@@ -428,6 +423,7 @@ nav{
     justify-content: center;
 	margin-left: 25px;
 	margin-right: 25px;
+	height: 120dvh;
 }
 .SN-textos{
     margin-left: 16px;
@@ -559,6 +555,9 @@ footer{
 		width: 100%;
 		height: 100%;
 	}
+	.home-section{
+		height: 120dvw;
+	}
 }
 
 @media screen and (min-width: 1366px){
@@ -632,16 +631,16 @@ footer{
 	.Intro{
 		padding-top: 100px;
 		width: 100dvw;
-		height: 60dvh;
 		position: relative;
+		height: 50dvw;
 	}
 	.Sobre-nos{
 		margin-left: 106px;
 		margin-right: 176px;
-		height: 200dvh;
+		height: 60dvw;
 		display: flex;
 		justify-content: space-between;
-		padding-top: 50dvh;
+		padding-top: 10dvw;
 		margin-left: 106px;
 		margin-right: 176px;
 	}
@@ -824,7 +823,6 @@ footer{
 		overflow: hidden;
 		height: fit-content;
 		align-items: center;
-		
 	}
 	.social-media>span{
 		width: 100%;
@@ -860,9 +858,6 @@ footer{
 		height: 100%;
 		width: 100dvw;
 	}
-	.home-section{
-		height: 120dvw;
-	}
 	.cta-button{
 		width: 20dvw;
 		height: 5dvh;
@@ -871,7 +866,11 @@ footer{
 		width: 100%;
 		height: 100%;
 	}
+	.space{
+		height: 40px
+	}
 }
+
 
 
 
