@@ -26,7 +26,7 @@ container.addEventListener('mouseup', () => {
 container.addEventListener('touchstart', (e) => {
   xInicial = e.touches[0].clientX;
   scrolling = true;
-  container.style.cursor = 'grabbing'; // Optional for visual feedback (might not work on all browsers)
+  container.style.cursor = 'grabbing';
   container.addEventListener('touchmove', handleTouchMove);
 });
 
