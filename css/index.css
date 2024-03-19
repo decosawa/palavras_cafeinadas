@@ -86,8 +86,9 @@ nav{
 }
 
 .images-carrousel{
-    padding: 10dvh 3dvw;
-    padding-left: 3dvw;
+	padding-top: 10dvh;
+	padding-left: 5dvw;
+	padding-right: 160px;
     overflow-x:hidden;
     display: flex;
     width: 100vw;
